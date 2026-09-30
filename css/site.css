@@ -397,6 +397,25 @@ figure.grain { position: relative; }
 }
 
 .product-card:hover .card-cta { opacity: 0.82; }
+button.card-cta { border: 0; cursor: pointer; font-family: inherit; }
+
+/* enquiry dialog */
+#enquiryDialog {
+  border: 0; padding: 2rem; width: min(30rem, calc(100vw - 2rem));
+  background: var(--bone); color: var(--ink);
+}
+#enquiryDialog::backdrop { background: rgba(0,0,0,0.55); }
+.enq-close-row { display: flex; justify-content: flex-end; margin: -1rem -1rem 0 0; }
+.enq-x { background: none; border: 0; font-size: 1.6rem; line-height: 1; cursor: pointer; color: var(--ink); }
+.enq-title { font-size: 1.3rem; margin: 0 0 0.5rem; }
+.enq-sub { font-size: 0.85rem; color: var(--ink-soft); margin: 0 0 1.2rem; }
+.enq-form label { display: block; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.9rem; }
+.enq-form input, .enq-form textarea {
+  display: block; width: 100%; margin-top: 0.3rem; padding: 0.6rem;
+  font: inherit; font-size: 0.95rem; letter-spacing: 0; text-transform: none;
+  border: 1px solid var(--ink); background: transparent; color: var(--ink);
+}
+.enq-status { font-size: 0.85rem; margin: 0.8rem 0 0; min-height: 1.2em; }
 
 .shop-more {
   margin-top: clamp(2.5rem, 5vh, 4rem);
