@@ -4,7 +4,7 @@
    until then the Buy button opens an enquiry form that emails
    the studio (FormSubmit relay). */
 
-const ENQUIRY_TO = "meredithblackmore@yahoo.com";
+const ENQUIRY_TO = "gallerymeredith@gmail.com";
 
 function enquiryDialog() {
   let dlg = document.getElementById("enquiryDialog");
